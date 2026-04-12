@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mere Apps</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Philosophy */
+    .philosophy {
+      padding: 40px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .philosophy h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    .philosophy p {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    /* Apps */
+    .apps {
+      padding: 40px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .apps h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    .apps .app-card + .app-card {
+      margin-top: 12px;
+    }
+
+    .app-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s;
+    }
+
+    .app-card:hover {
+      border-color: #ccc;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .app-info h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .app-info p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .app-card-mystery {
+      border-style: dashed;
+      border-color: #ddd;
+      cursor: default;
+    }
+
+    .app-card-mystery:hover {
+      border-color: #ddd;
+    }
+
+    .app-icon-mystery {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: #f5f5f5;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .app-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #2563EB;
+      background: #EFF6FF;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #999;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 48px 0 40px; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mere Apps</h1>
+      <p>Software that does one thing well. No bloat, no upsells, no feature creep. Just simple tools that stay out of your way.</p>
+    </header>
+
+    <section class="philosophy">
+      <h2>Philosophy</h2>
+      <p>Most software tries to do too much. Every update adds features nobody asked for, buries the thing you actually need behind three menus, and turns a simple task into a decision tree.</p>
+      <p>Mere Apps exist because the best tool is the one you don't have to think about. Each app solves one problem, does it cleanly, and stops there.</p>
+    </section>
+
+    <section class="apps">
+      <h2>Apps</h2>
+      <a class="app-card" href="/mere-habits/">
+        <div class="app-icon"><img src="/mere-habits/icon.png" alt="Mere Habits icon"></div>
+        <div class="app-info">
+          <h3>Mere Habits</h3>
+          <p>Daily habit tracking for yourself or your household. Tap to complete, done.</p>
+          <span class="app-badge">Coming Soon</span>
+        </div>
+      </a>
+
+      <div class="app-card app-card-mystery">
+        <div class="app-icon-mystery">+</div>
+        <div class="app-info">
+          <h3>More to come</h3>
+          <p>We're working on other simple mere apps. Have one you wish to request? <a href="mailto:mereappsdev@gmail.com" style="color: #2563EB; text-decoration: none;">Let us know.</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Matt West &middot; <a href="mailto:mereappsdev@gmail.com">Contact</a></p>
+    </footer>
+  </div>
+</body>
+</html>
