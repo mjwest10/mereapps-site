@@ -75,21 +75,17 @@
     li { margin-bottom: 10px; }
 
     .url {
-      display: flex;
-      gap: 8px;
-      align-items: center;
       margin: 10px 0 4px;
     }
 
     .url code {
-      flex: 1;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.9rem;
+      display: block;
+      font-family: inherit;
+      font-size: 0.95rem;
       background: #F3F4F6;
       padding: 10px 12px;
       border-radius: 8px;
       overflow-x: auto;
-      white-space: nowrap;
     }
 
     .url button {
@@ -100,7 +96,8 @@
       background: #EFF6FF;
       border: none;
       border-radius: 8px;
-      padding: 10px 14px;
+      padding: 8px 16px;
+      margin-top: 8px;
       cursor: pointer;
       -webkit-appearance: none;
     }
@@ -155,9 +152,9 @@
       <h2>Connect</h2>
       <ol>
         <li>
-          In Muse, ask it to add a custom connector for this MCP server:
-          <div class="url"><code id="mcp-url">https://mcp-meals.mereapps.com/mcp</code><button type="button" id="copy">Copy</button></div>
-          <p class="muted">For example: &ldquo;Connect to the Mere Meals MCP server at https://mcp-meals.mereapps.com/mcp.&rdquo;</p>
+          Copy this and send it to Muse in a chat:
+          <div class="url"><code id="mcp-url">Connect to the Mere Meals MCP server at <span style="white-space:nowrap">https://mcp-meals.mereapps.com/mcp</span></code><button type="button" id="copy">Copy</button></div>
+          <p class="muted">Muse adds it as a custom connector.</p>
         </li>
         <li>A Mere Meals sign-in page opens. Sign in with the same account you use in the app: Apple, Google, or email.</li>
         <li>Choose what Muse may do: see your plan, recipes and grocery list, and optionally plan meals and save recipes. Tap <strong>Allow</strong>.</li>
@@ -185,7 +182,7 @@
 
     <section>
       <h2>Other assistants</h2>
-      <p>The same address works with any assistant that supports remote MCP servers with sign-in. Add it wherever that assistant lists its connectors.</p>
+      <p>The same address, <code>https://mcp-meals.mereapps.com/mcp</code>, works with any assistant that supports remote MCP servers with sign-in. Add it wherever that assistant lists its connectors.</p>
     </section>
 
     <footer>
